@@ -1,0 +1,8 @@
+Bus A (2 seats):
+  Asha: Seat 1
+  Bala: Seat 2
+  Chitra: Waiting
+Bus B (3 seats):
+  Dev: Seat 1
+  Esha: Seat 2
+issued A = 2, issued B = 2

@@ -1,0 +1,6 @@
+  CAP      adds   shift(ms)  circular(ms)    speed-up  contents
+    10    200000         1.726         0.737           2.3x      same
+    50    200000         3.942         0.755           5.2x      same
+   500    200000        17.389         0.825          21.1x      same
+  2000    100000        34.574         0.429          80.5x      same
+ 10000     50000       195.587         0.185        1057.9x      same

@@ -1,0 +1,5 @@
+Before                  : 72 85 91 64 88 
+after highest() += 2    : 72 85 93 64 88 
+after highest() = 95    : 72 85 95 64 88 
+copy changed to 97, array still : 72 85 95 64 88 
+const reference reads : 95

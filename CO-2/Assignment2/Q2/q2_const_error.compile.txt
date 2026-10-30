@@ -1,0 +1,5 @@
+q2_const_error.cpp: In function 'int main()':
+q2_const_error.cpp:13:28: error: assignment of read-only location 'highestConst(((const int*)((int*)(& marks))), 3)'
+   13 |     highestConst(marks, 3) += 2;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+exit 1

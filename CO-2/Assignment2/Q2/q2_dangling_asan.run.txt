@@ -1,0 +1,13 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==370==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x55ea59c2e404 bp 0x7fff0fe0f6f0 sp 0x7fff0fe0f6e0 T0)
+==370==The signal is caused by a READ memory access.
+==370==Hint: address points to the zero page.
+    #0 0x55ea59c2e404 in main q2_dangling.cpp:13
+    #1 0x7f4a3482a1c9  (/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9) (BuildId: 8e9fd827446c24067541ac5390e6f527fb5947bb)
+    #2 0x7f4a3482a28a in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2a28a) (BuildId: 8e9fd827446c24067541ac5390e6f527fb5947bb)
+    #3 0x55ea59c2e1c4 in _start (bin/q2_dangling_asan+0x11c4) (BuildId: 796c33d08c7fe731a323c9d110092bf3d77809d3)
+
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV q2_dangling.cpp:13 in main
+==370==ABORTING

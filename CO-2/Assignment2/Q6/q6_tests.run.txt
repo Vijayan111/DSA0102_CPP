@@ -1,0 +1,5 @@
+09:45 and 13:10 (given)         minutesBetween = 205  earlier(a,b) = true  earlier(b,a) = false
+11:50 and 12:10 (across noon)   minutesBetween = 20  earlier(a,b) = true  earlier(b,a) = false
+12:10 and 11:50 (reversed)      minutesBetween = 20  earlier(a,b) = false  earlier(b,a) = true
+08:30 and 08:30 (same time)     minutesBetween = 0  earlier(a,b) = false  earlier(b,a) = false
+12:00 and 12:00 (noon twice)    minutesBetween = 0  earlier(a,b) = false  earlier(b,a) = false

@@ -1,0 +1,9 @@
+sizeof(long long) = 8 bytes
+sizeof(Student)   = 472 bytes
+sizeof(Student*)  = 8 bytes (what a reference costs in practice)
+
+20000000 calls each:
+  long long by value   : 21.6163 ms
+  Student by value     : 477.12 ms
+  Student by reference : 22.3704 ms
+  Student by const ref : 27.0363 ms

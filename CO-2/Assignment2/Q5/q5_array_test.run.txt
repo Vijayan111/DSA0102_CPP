@@ -1,0 +1,7 @@
+Asha: Seat 1
+Bala: Seat 2
+Chitra: Seat 3
+Dev: Waiting
+Esha: Waiting
+Farook: Waiting
+Issued: 3  Waiting list: 3

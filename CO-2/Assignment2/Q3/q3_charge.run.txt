@@ -1,0 +1,6 @@
+charge(2)                      -> [int grams ] 0.10
+charge(2.0)                    -> [double kg ] 100.00
+charge(2.0f)                   -> [double kg ] 100.00
+charge(1500, true)             -> [int grams ] 115.00
+charge(1.5, true, true)        -> [double kg ] 140.00
+charge(Parcel{3.0,false,true}) -> [Parcel    ] 175.00

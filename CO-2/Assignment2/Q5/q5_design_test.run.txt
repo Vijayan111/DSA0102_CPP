@@ -1,0 +1,20 @@
+Tickets before anything is created: issued = 0 (no object needed)
+
+bookTwo called the first time:
+  Eswar: Seat 1
+  Farah: Seat 2
+  after call 1 -> issued = 2, waiting = 0
+
+bookTwo called the second time:
+  Gopi: Seat 3
+  Hema: Waiting
+  after call 2 -> issued = 3, waiting = 1
+
+Array of 6 more tickets (capacity already used up):
+  P1: Waiting
+  P2: Waiting
+  P3: Waiting
+  P4: Waiting
+  P5: Waiting
+  P6: Waiting
+  final -> issued = 3, waiting = 7

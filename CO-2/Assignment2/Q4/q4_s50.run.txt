@@ -1,0 +1,33 @@
+--- after 10 transactions ---
+Mini statement  A/c 1001  (last 10 of 10)
+ No  Type  Amount  Balance
+ 10   W      600    11800
+  9   D      100    12400
+  8   W      450    12300
+  7   D     2000    12750
+  6   W      300    10750
+  5   W     1000    11050
+  4   D      250    12050
+  3   D     1500    11800
+  2   W      200    10300
+  1   D      500    10500
+Available balance: 11800
+
+--- after 12 transactions ---
+Mini statement  A/c 1001  (last 12 of 12)
+ No  Type  Amount  Balance
+ 12   W     1300    11200
+ 11   D      700    12500
+ 10   W      600    11800
+  9   D      100    12400
+  8   W      450    12300
+  7   D     2000    12750
+  6   W      300    10750
+  5   W     1000    11050
+  4   D      250    12050
+  3   D     1500    11800
+  2   W      200    10300
+  1   D      500    10500
+Available balance: 11200
+
+withdraw(99999) accepted? false (not recorded)

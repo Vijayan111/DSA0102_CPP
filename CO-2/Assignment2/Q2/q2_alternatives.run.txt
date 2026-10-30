@@ -1,0 +1,6 @@
+marks after three +2 moderations: 72 85 97 64 88 
+
+n          index(ms)  pointer(ms)  reference(ms)   (50 repeats)
+1000000    147.512      178.928        217.746
+2000000    339.947      759.095        544.83
+4000000    840.547      883.742        1239.43

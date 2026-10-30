@@ -1,0 +1,7 @@
+q2_dangling.cpp: In function 'int& badHighest()':
+q2_dangling.cpp:7:12: warning: reference to local variable 'local' returned [-Wreturn-local-addr]
+    7 |     return local;          // 'local' dies when the function returns
+      |            ^~~~~
+q2_dangling.cpp:6:9: note: declared here
+    6 |     int local = 91;
+      |         ^~~~~

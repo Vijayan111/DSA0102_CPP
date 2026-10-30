@@ -1,0 +1,6 @@
+capacity before push_back : 3
+capacity after push_back  : 6
+buffer moved to new address: true
+pointer still points into the vector? false
+index still valid, v[idx] = 91
+after v[idx] += 2        : 93

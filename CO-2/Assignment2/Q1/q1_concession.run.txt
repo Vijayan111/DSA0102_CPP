@@ -1,0 +1,16 @@
+call by value:
+  inside applyByValue   : 40500
+  stored fee afterwards : 45000
+
+call by reference:
+  inside applyByRef     : 40500
+  stored fee afterwards : 40500
+
+call by pointer:
+  inside applyByPtr     : 40500
+  stored fee afterwards : 40500
+
+after merit 10%          : 40500
+after sports 15% as well : 34425
+after single parent 25%  : 25819
+one-line chain           : 25819

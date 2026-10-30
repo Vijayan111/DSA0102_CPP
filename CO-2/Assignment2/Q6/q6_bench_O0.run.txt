@@ -1,0 +1,5 @@
+10,000,000 iterations (each = one minutes call + one earlier call), best of 21
+friend, inline          : 47.5604 ms
+friend, noinline        : 44.1078 ms
+member functions        : 48.8202 ms
+public getters          : 96.5346 ms
