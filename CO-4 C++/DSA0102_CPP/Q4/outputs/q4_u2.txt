@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -g -fsanitize=address -DVIRTUAL_DTOR q4_alt_unique.cpp -o q4_alt_unique
+$ ./q4_alt_unique
+3.5
+4
+sliced copy rate = 3.5
+sizeof(raw pointer)=8  sizeof(unique_ptr)=8
+  ~SeniorAccount() ran

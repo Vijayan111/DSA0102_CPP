@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra q5_array.cpp -o q5_array
+$ ./q5_array
+Asha      180.00
+Bala      207.00
+Chitra    508.25
+Dev        30.00
+highest (pointer arithmetic): Chitra 508.25
+highest (indexing)          : Chitra 508.25
+empty array                 : nullptr

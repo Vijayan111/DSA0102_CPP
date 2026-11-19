@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra q4_slicing_error.cpp -o q4_slicing_error
+q4_slicing_error.cpp: In function ‘int main()’:
+q4_slicing_error.cpp:32:34: error: use of deleted function ‘Account::Account(const Account&)’
+   32 |     Account copy = SeniorAccount();      // slicing attempt
+      |                                  ^
+q4_slicing_error.cpp:8:5: note: declared here
+    8 |     Account(const Account&) = delete;            // slicing is now a compile error
+      |     ^~~~~~~
+exit 1

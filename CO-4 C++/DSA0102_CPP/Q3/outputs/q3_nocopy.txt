@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -g -fsanitize=address -DNOCOPY q3_alt_ptr.cpp -o q3_nocopy
+$ ./q3_nocopy 2>&1 | grep -E "ERROR|#[3-6] .*(operator delete|Address::|StudentPtr::|main)" | cut -c1-120
+==1533==ERROR: AddressSanitizer: SEGV on unknown address 0xfffffffffffffff7 (pc 0x7fbf10844688 bp 0x7ffca445ec20 sp 0x7f
+    #3 0x7fbf108ff064 in operator delete(void*) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:152
+    #4 0x56297dce20b7 in Address::~Address() q3_alt_ptr.cpp:6
+    #5 0x56297dce21da in StudentPtr::~StudentPtr() q3_alt_ptr.cpp:31
+    #6 0x56297dce1946 in main q3_alt_ptr.cpp:63

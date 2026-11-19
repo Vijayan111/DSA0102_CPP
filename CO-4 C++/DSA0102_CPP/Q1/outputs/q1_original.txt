@@ -1,0 +1,6 @@
+$ g++ -std=c++17 -Wall -Wextra q1_original.cpp -o q1_original
+$ ./q1_original
+Professor pay (da field = 99999) : 81000
+Professor pay (da field = 0)     : 81000
+p.id = -5 is accepted silently   : -5
+total (three separate calls)     : 127400

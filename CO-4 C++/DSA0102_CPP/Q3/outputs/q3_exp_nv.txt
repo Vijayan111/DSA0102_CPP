@@ -1,0 +1,4 @@
+$ g++ -std=c++17 -Wall -Wextra -DNOVIRTUAL q3_experiment.cpp -o q3_experiment
+$ ./q3_experiment
+Person Student Person Staff TA 
+sizeof(Student)=16 sizeof(Staff)=16 sizeof(TeachingAssistant)=32

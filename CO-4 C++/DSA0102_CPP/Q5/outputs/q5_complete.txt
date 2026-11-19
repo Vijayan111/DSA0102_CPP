@@ -1,0 +1,3 @@
+$ g++ -std=c++17 -Wall -Wextra q5_complete.cpp -o q5_complete
+$ ./q5_complete
+324.00

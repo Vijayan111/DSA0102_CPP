@@ -1,0 +1,3 @@
+$ g++ -std=c++17 -Wall -Wextra q5_byvalue.cpp -o q5_byvalue
+$ ./q5_byvalue
+240.00

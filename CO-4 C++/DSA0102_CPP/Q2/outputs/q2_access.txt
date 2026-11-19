@@ -1,0 +1,11 @@
+$ bash q2_access_test.sh
+inherit    member     in Student    outside       in derived   
+public     pub        yes          yes          yes          
+public     prot       yes          NO           yes          
+public     priv       NO           NO           NO           
+protected  pub        yes          NO           yes          
+protected  prot       yes          NO           yes          
+protected  priv       NO           NO           NO           
+private    pub        yes          NO           NO           
+private    prot       yes          NO           NO           
+private    priv       NO           NO           NO           

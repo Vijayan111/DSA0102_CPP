@@ -1,0 +1,26 @@
+$ g++ -std=c++17 -Wall -Wextra q3_no_virtual_base_init.cpp -o q3_nvb
+q3_no_virtual_base_init.cpp: In constructor ‘TeachingAssistant::TeachingAssistant(const std::string&, int, const std::string&, int)’:
+q3_no_virtual_base_init.cpp:56:56: error: no matching function for call to ‘Person::Person()’
+   56 |           Staff("ignored-2", 0, "none", 0, "CSE", 15000)
+      |                                                        ^
+q3_no_virtual_base_init.cpp:24:5: note: candidate: ‘Person::Person(const std::string&, int, const std::string&, int)’
+   24 |     Person(const std::string& n, int i, const std::string& city, int pin) : name(n), id(i), addr(city, pin)
+      |     ^~~~~~
+q3_no_virtual_base_init.cpp:24:5: note:   candidate expects 4 arguments, 0 provided
+q3_no_virtual_base_init.cpp:19:7: note: candidate: ‘Person::Person(const Person&)’
+   19 | class Person {
+      |       ^~~~~~
+q3_no_virtual_base_init.cpp:19:7: note:   candidate expects 1 argument, 0 provided
+q3_no_virtual_base_init.cpp:54:42: warning: unused parameter ‘n’ [-Wunused-parameter]
+   54 |     TeachingAssistant(const std::string& n, int i, const std::string& city, int pin)
+      |                       ~~~~~~~~~~~~~~~~~~~^
+q3_no_virtual_base_init.cpp:54:49: warning: unused parameter ‘i’ [-Wunused-parameter]
+   54 |     TeachingAssistant(const std::string& n, int i, const std::string& city, int pin)
+      |                                             ~~~~^
+q3_no_virtual_base_init.cpp:54:71: warning: unused parameter ‘city’ [-Wunused-parameter]
+   54 |     TeachingAssistant(const std::string& n, int i, const std::string& city, int pin)
+      |                                                    ~~~~~~~~~~~~~~~~~~~^~~~
+q3_no_virtual_base_init.cpp:54:81: warning: unused parameter ‘pin’ [-Wunused-parameter]
+   54 |     TeachingAssistant(const std::string& n, int i, const std::string& city, int pin)
+      |                                                                             ~~~~^~~
+exit 1

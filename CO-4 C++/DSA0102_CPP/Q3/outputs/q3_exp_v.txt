@@ -1,0 +1,4 @@
+$ g++ -std=c++17 -Wall -Wextra q3_experiment.cpp -o q3_experiment
+$ ./q3_experiment
+Person Student Staff TA 
+sizeof(Student)=24 sizeof(Staff)=24 sizeof(TeachingAssistant)=40

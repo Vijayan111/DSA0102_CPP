@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra q5_ways.cpp -o q5_ways
+$ ./q5_ways
+(a) by name        : 162.00
+(b) through pointer: 324.00
+(c) via reference  : 405.00
+(d) new / delete   : 427.50
+this == &a ? true

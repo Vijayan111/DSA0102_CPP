@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra q1_hierarchy.cpp -o q1_hierarchy
+$ ./q1_hierarchy
+Professor      Dr. Meena     81000.00
+Lab Assistant  Ravi          28400.00
+Guest Faculty  Anand         18000.00
+Librarian      Sita          42600.00
+Total payroll  : 170000.00

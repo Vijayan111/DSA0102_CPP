@@ -1,0 +1,29 @@
+$ g++ -std=c++17 -Wall -Wextra q6_demo_ext.cpp -o q6_demo_ext
+$ ./q6_demo_ext
+Fleet:
+  Bicycle      BC-101     Rs   100/day  available  
+  Two-wheeler  TN30A1234  Rs   400/day  available  level 8, service due 1/12/2026
+  Car          TN30B5678  Rs  1200/day  available  level 30, service due 15/1/2027, seats 5
+  Electric car TN30E9012  Rs  1500/day  available  level 36, service due 20/12/2026, seats 5, battery 40 kWh
+  Two-wheeler  TN30A0000  Rs   400/day  available  level 9, service due 10/10/2026
+  Electric bus TN30BUS1   Rs  5000/day  available  level 200, service due 5/3/2027, seats 40, battery 300 kWh
+
+Renting:
+  rent BC-101: OK (Bicycle)
+  rent TN30A1234: OK (Two-wheeler)
+  rent TN30B5678: OK (Car)
+  rent TN30E9012: OK (Electric car)
+  rent TN30A0000: REFUSED (service overdue)
+  rent TN30BUS1: OK (Electric bus)
+
+Returning:
+  return BC-101    Bicycle      2 days, 0 late, used   0  -> Rs    200
+  return TN30A1234 Two-wheeler  3 days, 1 late, used   4  -> Rs   2250
+  return TN30B5678 Car          4 days, 2 late, used  25  -> Rs  11700
+  return TN30E9012 Electric car 2 days, 1 late, used  20  -> Rs   5890
+  return TN30BUS1  Electric bus 1 days, 0 late, used  60  -> Rs   7420
+
+Total collected: Rs 27460
+$ md5sum vehicles.h fleet.h
+4bf78dc6a95c6400e562e93a655cadc5  vehicles.h
+96cf0c220ca21c0de4b2bf83f5c15403  fleet.h

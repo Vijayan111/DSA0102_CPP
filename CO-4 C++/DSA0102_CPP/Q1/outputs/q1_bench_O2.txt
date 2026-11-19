@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -O2 q1_bench.cpp -o q1_bench
+$ ./q1_bench
+sizeof(ProfH)=64 sizeof(LabH)=56 sizeof(GuestH)=64  sizeof(StaffS)=72
+10,000,000 pay() calls, best of 11
+  virtual call (hierarchy) : 25.2507 ms
+  switch (one class)       : 9.60419 ms
+  same total? yes  (2.29799e+11)

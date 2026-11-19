@@ -1,0 +1,19 @@
+$ g++ -std=c++17 -Wall -Wextra -g -fsanitize=address q4_buggy.cpp -o q4_buggy_asan
+$ ./q4_buggy_asan
+=================================================================
+==1547==ERROR: AddressSanitizer: new-delete-type-mismatch on 0x502000000030 in thread T0:
+  object passed to delete has wrong type:
+  size of the allocated type:   8 bytes;
+  size of the deallocated type: 1 bytes.
+    #0 0x7f34e80ff5e8 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164
+    #1 0x5640b2fd8678 in main q4_buggy.cpp:25
+
+0x502000000030 is located 0 bytes inside of 8-byte region [0x502000000030,0x502000000038)
+allocated by thread T0 here:
+    #0 0x7f34e80fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x5640b2fd84cd in main q4_buggy.cpp:21
+
+SUMMARY: AddressSanitizer: new-delete-type-mismatch ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164 in operator delete(void*, unsigned long)
+==1547==HINT: if you don't care about these errors you may set ASAN_OPTIONS=new_delete_type_mismatch=0
+==1547==ABORTING
+exit 1

@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q2_compose.cpp -o q2_compose
+$ ./q2_compose
+sizeof(Person)=4  sizeof(TA_V, virtual diamond)=40  sizeof(TA_C, composition)=32
+100,000,000 reads of the id:  virtual base 235.749 ms,  member object 222.327 ms
+composition holds two ids per TA: s.id=5 f.id=10 (can disagree)

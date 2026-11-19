@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra q2_classes.cpp -o q2_classes
+$ ./q2_classes
+Kavya (id 1) MTech CSE CGPA 8.7, CSE Dept Rs 15000
+Arun - PhD CSE, fellowship UGC Rs 31000/month
+Kavya: sizeof(Person)=80, sizeof(TeachingAssistant)=176

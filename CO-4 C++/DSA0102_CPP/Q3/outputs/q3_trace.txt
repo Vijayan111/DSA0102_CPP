@@ -1,0 +1,31 @@
+$ g++ -std=c++17 -Wall -Wextra q3_trace.cpp -o q3_trace
+$ ./q3_trace
+--- Student object
+  Address(Salem)
+  Person(Asha)
+  Course(CS301)
+  Student
+  ~Student
+  ~Course
+  ~Person
+  ~Address
+--- Staff object
+  Address(Chennai)
+  Person(Bala)
+  Staff
+  ~Staff
+  ~Person
+  ~Address
+--- TeachingAssistant object
+  Address(Madurai)
+  Person(Kavya)
+  Course(CS501)
+  Student
+  Staff
+  TeachingAssistant
+  ~TeachingAssistant
+  ~Staff
+  ~Student
+  ~Course
+  ~Person
+  ~Address

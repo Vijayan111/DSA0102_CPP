@@ -1,0 +1,4 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q3_alt_ptr.cpp -o q3_alt_ptr
+$ ./q3_alt_ptr
+sizeof(StudentMember)=48  sizeof(StudentPtr)=16  (+ 40 bytes on the heap per StudentPtr)
+2,000,000 create+use+destroy:  member 231.548 ms,  pointer 250.403 ms

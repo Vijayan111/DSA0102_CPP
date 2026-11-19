@@ -1,0 +1,6 @@
+$ g++ -std=c++17 -Wall -Wextra -O2 q5_alt_vector.cpp -o q5_alt_vector
+$ ./q5_alt_vector
+sizeof(Cart)=416 bytes copied into the vector per cart; sizeof(Cart*)=8
+capacity 3, &v[0] before = 0x55acc934e2c0
+capacity 6, &v[0] after  = 0x55acc934e7b0  (MOVED: ptr is dangling)
+highest-total search, 100,000 carts x 20 passes: vector<Cart> 22.6863 ms, Cart* array 22.2926 ms

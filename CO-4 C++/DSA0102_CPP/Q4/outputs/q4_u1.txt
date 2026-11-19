@@ -1,0 +1,6 @@
+$ g++ -std=c++17 -Wall -Wextra -g -fsanitize=address q4_alt_unique.cpp -o q4_alt_unique
+$ ./q4_alt_unique 2>&1 | grep -E "ERROR|size of|SUMMARY"
+==1572==ERROR: AddressSanitizer: new-delete-type-mismatch on 0x502000000050 in thread T0:
+  size of the allocated type:   16 bytes;
+  size of the deallocated type: 8 bytes.
+SUMMARY: AddressSanitizer: new-delete-type-mismatch ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164 in operator delete(void*, unsigned long)

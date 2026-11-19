@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra q4_override_error.cpp -o q4_override_error
+q4_override_error.cpp:7:12: error: ‘double SeniorAccount::rate() const’ marked ‘override’, but does not override
+    7 |     double rate() const override { return 4.0; } // error: does not override anything
+      |            ^~~~
+exit 1

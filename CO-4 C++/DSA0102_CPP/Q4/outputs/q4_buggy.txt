@@ -1,0 +1,25 @@
+$ g++ -std=c++17 -Wall -Wextra q4_buggy.cpp -o q4_buggy
+$ ./q4_buggy
+  Account()
+  Account()
+  SeniorAccount() allocated 800 bytes
+rates through Account*:
+3.5
+3.5
+deleting through Account*:
+  ~Account()
+  ~Account()
+slicing:
+  Account()
+  SeniorAccount() allocated 800 bytes
+  ~SeniorAccount() released 800 bytes
+  ~Account()
+copy.rate() = 3.5
+  Account()
+  SeniorAccount() allocated 800 bytes
+  ~SeniorAccount() released 800 bytes
+  ~Account()
+v[0].rate()  = 3.5
+end of main
+  ~Account()
+  ~Account()
