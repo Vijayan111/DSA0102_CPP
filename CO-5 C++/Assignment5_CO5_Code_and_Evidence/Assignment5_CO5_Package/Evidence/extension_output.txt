@@ -1,0 +1,4 @@
+OP 1700
+MATERNITY 43000
+Employee benefit: 34400
+Total: 44700

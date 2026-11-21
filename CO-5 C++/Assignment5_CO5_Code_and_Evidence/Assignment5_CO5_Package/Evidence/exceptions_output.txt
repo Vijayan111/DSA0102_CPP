@@ -1,0 +1,6 @@
+approved 40000
+audit: exceeds cover
+claim rejected: exceeds cover
+error: negative amount
+Validation: ok done caught negative [log too large] caught too large 
+~worker caught 42

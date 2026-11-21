@@ -1,0 +1,8 @@
+OP Ravi: 1700
+IP Meena: 47500
+DAY Arun: 18000
+ER Divya: 5000
+Total 72200
+Insurance covers 30000
+Government covers 15000
+Corporate covers 1190

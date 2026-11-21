@@ -1,0 +1,11 @@
+Bills: 1000000
+Virtual total: 499000000.000
+Virtual time ms: 3.585
+Switch total: 499000000.000
+Switch time ms: 2.160
+Return-code invalid 0% time ms: 0.745 accepted 1000000
+Exception invalid 0% time ms: 0.597 accepted 1000000
+Return-code invalid 1% time ms: 0.573 accepted 990000
+Exception invalid 1% time ms: 10.386 accepted 990000
+Return-code invalid 50% time ms: 0.915 accepted 500000
+Exception invalid 50% time ms: 407.235 accepted 500000
